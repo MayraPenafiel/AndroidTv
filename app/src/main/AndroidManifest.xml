@@ -10,6 +10,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Galeria">
         <activity
+            android:name=".pantallaInicial"
+            android:exported="false" />
+        <activity
+            android:name=".menuPrincipal"
+            android:exported="false" />
+        <activity
+            android:name=".ImageFullScreen"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
