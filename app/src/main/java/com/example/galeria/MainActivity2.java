@@ -7,13 +7,15 @@ import android.widget.GridView;
 
 import Adaptador.GaleriaAdapter;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity2 extends AppCompatActivity {
 
+    GridView gridImagenes;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-
+        setContentView(R.layout.activity_main2);
+        gridImagenes = findViewById(R.id.gridview);
+        gridImagenes.setAdapter(new GaleriaAdapter(this));
     }
 }
