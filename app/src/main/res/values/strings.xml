@@ -1,9 +1,3 @@
 <resources>
     <string name="app_name">Galeria</string>
-    <string name="t">TODO</string>
-    <string name="categoria1">Zapatos</string>
-    <string name="categoria2">Animales</string>
-    <string name="categoria3">Pasajes</string>
-    <string name="categoria4">Anime</string>
-    <string name="categoria5">Plantas</string>
 </resources>
