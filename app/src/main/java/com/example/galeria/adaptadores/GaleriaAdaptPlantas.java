@@ -3,13 +3,16 @@ package com.example.galeria.adaptadores;
 import android.content.Context;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AbsListView;
 import android.widget.BaseAdapter;
+import android.widget.ImageView;
 
 import com.example.galeria.R;
 
 public class GaleriaAdaptPlantas extends BaseAdapter {
     private Context mcontext;
     public int[] img = {
+            R.drawable.descarga,
             R.drawable.r
     };
 
@@ -19,12 +22,12 @@ public class GaleriaAdaptPlantas extends BaseAdapter {
 
     @Override
     public int getCount() {
-        return 0;
+        return img.length;
     }
 
     @Override
     public Object getItem(int i) {
-        return null;
+        return img[i];
     }
 
     @Override
@@ -34,6 +37,10 @@ public class GaleriaAdaptPlantas extends BaseAdapter {
 
     @Override
     public View getView(int i, View view, ViewGroup viewGroup) {
-        return null;
+        ImageView image = new ImageView(mcontext);
+        image.setImageResource(img[i]);
+        image.setScaleType(ImageView.ScaleType.CENTER_CROP);
+        image.setLayoutParams(new AbsListView.LayoutParams(340, 350));
+        return image;
     }
 }

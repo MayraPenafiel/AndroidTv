@@ -18,7 +18,6 @@ public class GaleriaImgAdanimales  extends BaseAdapter {
             R.drawable.img3,
             R.drawable.img4,
             R.drawable.img5,
-            R.drawable.img6,
             R.drawable.img8
     };
 
