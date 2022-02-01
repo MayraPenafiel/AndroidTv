@@ -9,6 +9,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Galeria">
+        android:name=".menuPrincipal"
+        android:exported="false" />
+        <activity
+            android:name=".pantallaInicial"
+            android:exported="false" />
+
         <activity
             android:name=".MainActivity"
             android:exported="true">
