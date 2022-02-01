@@ -1,4 +1,5 @@
 package com.example.galeria.adaptadores;
+
 import android.content.Context;
 import android.view.View;
 import android.view.ViewGroup;
@@ -8,36 +9,31 @@ import android.widget.ImageView;
 
 import com.example.galeria.R;
 
-public class GaleriaImagenesAdapter  extends BaseAdapter {
+public class GaleriaImgAdanimales  extends BaseAdapter {
     private Context mcontext;
-    public int[] imgz = {
-            R.drawable.zapato1,
-            R.drawable.zapato2,
-            R.drawable.zapato3,
-            R.drawable.zapato4,
-            R.drawable.zapato5,
-            R.drawable.zapato6,
-            R.drawable.zapato7,
-            R.drawable.zapato8,
-            R.drawable.zapato9,
-            R.drawable.zapato10,
-            R.drawable.zapato11,
-            R.drawable.zapato12
+    public int[] img = {
+            R.drawable.animales___portada,
+            R.drawable.img1,
+            R.drawable.img2,
+            R.drawable.img3,
+            R.drawable.img4,
+            R.drawable.img5,
+            R.drawable.img6,
+            R.drawable.img8
     };
 
-
-    public GaleriaImagenesAdapter(Context mcontext) {
+    public GaleriaImgAdanimales(Context mcontext) {
         this.mcontext = mcontext;
     }
 
     @Override
     public int getCount() {
-        return imgz.length;
+        return img.length;
     }
 
     @Override
     public Object getItem(int i) {
-        return imgz[i];
+        return img[i];
     }
 
     @Override
@@ -48,7 +44,7 @@ public class GaleriaImagenesAdapter  extends BaseAdapter {
     @Override
     public View getView(int i, View view, ViewGroup viewGroup) {
         ImageView image = new ImageView(mcontext);
-        image.setImageResource(imgz[i]);
+        image.setImageResource(img[i]);
         image.setScaleType(ImageView.ScaleType.CENTER_CROP);
         image.setLayoutParams(new AbsListView.LayoutParams(340, 350));
         return image;

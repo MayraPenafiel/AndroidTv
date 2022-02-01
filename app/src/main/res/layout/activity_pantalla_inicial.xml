@@ -8,8 +8,8 @@
 
     <GridView
         android:id="@+id/grid_view_imagenes"
-        android:layout_width="370dp"
-        android:layout_height="581dp"
+        android:layout_width="501dp"
+        android:layout_height="425dp"
         android:columnWidth="90dp"
         android:gravity="center"
         android:horizontalSpacing="10dp"
@@ -21,7 +21,6 @@
         app:layout_constraintHorizontal_bias="0.487"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.727">
-    </GridView>
+        app:layout_constraintVertical_bias="0.727"></GridView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
